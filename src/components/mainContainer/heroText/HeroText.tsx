@@ -14,7 +14,7 @@ function HeroText() {
                 </div>
 
                 <div className='heroImg'>
-                    <img src="src/assets/bgsvg.svg" alt="" />
+                    <img src="public\bgsvg.svg" alt="" />
                 </div>
 
 
