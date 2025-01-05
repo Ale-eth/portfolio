@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+
+.heroContainer{
+    border-style: dashed;
+    border-color: green;
+
+    width: 800px;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.heroBienvenido h1{
+    color:#353935	;
+    
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.heroText{
+    color: #353935;
+
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    font-size: large;
+}
+
+.heroImg img{
+    height: 400px;
+    height: 300px;
+}
