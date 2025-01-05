@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 
 
 .mainContainer{
@@ -26,4 +28,16 @@
     display: flex;
     justify-content: center;
     padding-top: 150px;
+}
+
+.heroSubtext{
+    display: flex;
+    justify-content: center;
+
+    font-family: "Itim", serif;
+    font-weight: 500;
+    font-size: 20px;
+    font-style: normal;
+
+    color: black;
 }
