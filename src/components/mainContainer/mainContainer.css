@@ -5,9 +5,13 @@
     height: 94vh;
     background-color: #F2EDDA;
 
+    display: flex;
+    justify-content: center;
     
+    /*
     border-style: dashed;
     border-color: red;
+    */
 }
 
 
