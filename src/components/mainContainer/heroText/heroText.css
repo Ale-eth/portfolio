@@ -12,9 +12,10 @@
     height: 100%;
 
     display: flex;
-    justify-content: center;
     flex-direction: column;
     text-align: center;
+
+    margin-top: 100px;
 }
 
 .heroBienvenido h1{
@@ -35,13 +36,12 @@
     font-size: 25px;
 }
 
-.heroImg img{
-    height: 300px;
-    height: 300px;
+.heroText p{
+    margin: 0;
+}
 
-    /*
-    border-style: dashed;
-    border-color: aqua;
-    */
+.heroImg img{
+    height: 350px;
+    height: 350px;
 }
 
