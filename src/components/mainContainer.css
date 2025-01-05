@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+.mainContainer{
+    background-image: url('../assets/bg2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 99.5vw;
+    height: 94vh;
+    background-color: #F2EDDA;
+
+    
+    border-style: dashed;
+    border-color: red;
+}
+
+.mainContainer h1{
+    color:black;
+    
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.heroText{
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+}
