@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-
 
 
 .mainContainer{
-    background-image: url('../assets/bg2.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 99.5vw;
     height: 94vh;
     background-color: #F2EDDA;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
 
     
     border-style: dashed;
@@ -17,11 +17,17 @@
 }
 
 .mainContainer h1{
-    color:black;
+    color:#353935	;
     
     font-family: "Permanent Marker", serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.mainContainer img{
+    color: #28282B;
+    width: 400px;
+    height: 500px;
 }
 
 .heroText{
@@ -30,14 +36,3 @@
     padding-top: 150px;
 }
 
-.heroSubtext{
-    display: flex;
-    justify-content: center;
-
-    font-family: "Itim", serif;
-    font-weight: 500;
-    font-size: 20px;
-    font-style: normal;
-
-    color: black;
-}

@@ -6,10 +6,10 @@ function Navbar() {
         <>
         <div className="navBar">
             <ul>
-                <li>HOME</li>
-                <li>ABOUT ME</li>
-                <li>PROJECTS</li>
-                <li>CONTACT</li>
+                <li>INICIO</li>
+                <li>SOBRE MI</li>
+                <li>PROYECTOS</li>
+                <li>CONTACTO</li>
             </ul>
         </div>
         </>
