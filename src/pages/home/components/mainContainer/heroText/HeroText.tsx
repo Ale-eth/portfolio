@@ -19,7 +19,7 @@ function HeroText() {
 
                 <div className='heroText'>
                     <p>Vivo en Tandil, provincia de Buenos Aires, Argentina.</p>
-                    <p>Actualmente estoy terminando mi carrera como desarrollador de aplicaciones en la Universidad de Ciencias Exactas de UNICEN en Tandil.</p>
+                    <p>Actualmente estoy terminando mi carrera como desarrollador de aplicaciones en la Facultad de Ciencias Exactas de la UNICEN en Tandil.</p>
                     <p>También, trabajo de forma remota como desarrollador backend en Apexlict, una empresa de desarrollo de software ubicada en Guayaquil, Ecuador.</p>
                 </div>
             </div>

@@ -27,3 +27,8 @@
     list-style-type: none;
     padding-left: 0; 
 }
+
+
+.navBar ul li a{
+    color: #232523;
+}
