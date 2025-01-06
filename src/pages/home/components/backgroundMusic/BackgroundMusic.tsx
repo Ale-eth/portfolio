@@ -1,8 +1,10 @@
+import { useEffect } from "react";
 import React, { useRef, useState } from "react";
 
 const BackgroundMusic = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [volume, setVolume] = useState(0.02);
 
   const togglePlay = () => {
     if (audioRef.current) {
@@ -16,8 +18,7 @@ const BackgroundMusic = () => {
   };
 
 
-  const [volume, setVolume] = useState(0.1); // Volumen inicial al 50%
-
+  // Volumen inicial al 50%
   const handleVolumeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newVolume = parseFloat(event.target.value); // Convertir el valor a un número decimal
     setVolume(newVolume);
@@ -25,6 +26,12 @@ const BackgroundMusic = () => {
       audioRef.current.volume = newVolume; // Ajustar el volumen del audio
     }
   };
+
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.volume = volume; // Ajusta el volumen al 20% cuando carga
+    }
+  }, []); // Solo se ejecuta una vez al cargar el componente
 
   return (
     <div>
@@ -38,7 +45,7 @@ const BackgroundMusic = () => {
         <input
           type="range"
           min="0" // Volumen mínimo
-          max="0.125" // Volumen máximo
+          max="0.05" // Volumen máximo
           step="0.01" // Incrementos de ajuste
           value={volume}
           onChange={handleVolumeChange}
