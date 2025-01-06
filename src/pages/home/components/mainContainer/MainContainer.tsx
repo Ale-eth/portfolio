@@ -1,6 +1,7 @@
 import './mainContainer.css'
 import Navbar from '../navBar/Navbar';
 import HeroText from './heroText/HeroText';
+import BackgroundMusic from '../backgroundMusic/BackgroundMusic';
 
 function MainContainer() {
     return (
@@ -9,6 +10,7 @@ function MainContainer() {
         <Navbar />
         <div className="mainContainer">
             <HeroText />
+            <BackgroundMusic />
         </div>
         
         </>
