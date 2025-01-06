@@ -1,0 +1,51 @@
+/* Estilo general para el input range */
+input[type="range"] {
+    -webkit-appearance: none; /* Elimina los estilos predeterminados de los navegadores */
+    appearance: none;
+    width: 50%; /* Ancho completo */
+    height: 8px; /* Altura de la barra */
+    background: #ddd; /* Color de fondo de la barra */
+    border-radius: 5px; /* Bordes redondeados */
+    outline: none; /* Elimina el borde al hacer foco */
+  }
+  
+  /* Estilo para el pulgar del range (el círculo que se mueve) */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 5px; /* Tamaño del pulgar */
+    height: 5px;
+    background: #232523; /* Color del pulgar */
+    border-radius: 50%; /* Hacer que sea redondo */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el pulgar */
+    transition: background-color 0.3s; /* Animación suave al cambiar de color */
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 5px;
+    height: 5px;
+    background: #4caf50;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Estilo de la barra cuando se está moviendo */
+  input[type="range"]:focus {
+    background: #4caf50; /* Cambia el color de la barra cuando se selecciona */
+  }
+  
+  /* Estilo de la barra al mover el control (el área "llena") */
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 2px;
+    background: #232523; /* Color de la parte llena de la barra */
+    border-radius: 5px;
+  }
+  
+  /* Estilo para el área "llena" en Firefox */
+  input[type="range"]::-moz-range-track {
+    height: 8px;
+    background: #4caf50;
+    border-radius: 3px;
+  }
+  

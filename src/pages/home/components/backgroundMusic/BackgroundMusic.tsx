@@ -1,10 +1,13 @@
 import { useEffect } from "react";
 import React, { useRef, useState } from "react";
 
+import './backgroundMusic.css'
+
+
 const BackgroundMusic = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [volume, setVolume] = useState(0.02);
+  const [volume, setVolume] = useState(0.01);
 
   const togglePlay = () => {
     if (audioRef.current) {
@@ -43,9 +46,10 @@ const BackgroundMusic = () => {
       <label>
         Volumen:
         <input
+          className="volumeInput"
           type="range"
           min="0" // Volumen mínimo
-          max="0.05" // Volumen máximo
+          max="0.07" // Volumen máximo
           step="0.01" // Incrementos de ajuste
           value={volume}
           onChange={handleVolumeChange}
