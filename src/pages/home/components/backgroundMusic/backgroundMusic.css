@@ -2,50 +2,90 @@
 input[type="range"] {
     -webkit-appearance: none; /* Elimina los estilos predeterminados de los navegadores */
     appearance: none;
-    width: 50%; /* Ancho completo */
-    height: 8px; /* Altura de la barra */
-    background: #ddd; /* Color de fondo de la barra */
-    border-radius: 5px; /* Bordes redondeados */
+    width: 100px; /* Ancho completo */
+    height: 30px; /* Altura de la barra */
+    background: #dad4bb; /* Color de fondo de la barra */
+    border-radius: 20px; /* Bordes redondeados */
     outline: none; /* Elimina el borde al hacer foco */
+    
   }
   
   /* Estilo para el pulgar del range (el círculo que se mueve) */
   input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 5px; /* Tamaño del pulgar */
-    height: 5px;
-    background: #232523; /* Color del pulgar */
+    width: 15px; /* Tamaño del pulgar */
+    height: 15px;
+    background: #EFEFEF; /* Color del pulgar */
+    border-radius: 50%; /* Hacer que sea redondo */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el pulgar */
+    transition: background-color 0.3s; /* Animación suave al cambiar de color */
+  }
+
+  input[type="range"]::-webkit-slider-runnable-track {
+    background-color: red;
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 15px; /* Tamaño del pulgar */
+    height: 15px;
+    background: #EFEFEF; /* Color del pulgar */
     border-radius: 50%; /* Hacer que sea redondo */
     cursor: pointer; /* Cambia el cursor al pasar sobre el pulgar */
     transition: background-color 0.3s; /* Animación suave al cambiar de color */
   }
   
-  input[type="range"]::-moz-range-thumb {
-    width: 5px;
-    height: 5px;
-    background: #4caf50;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
   /* Estilo de la barra cuando se está moviendo */
   input[type="range"]:focus {
-    background: #4caf50; /* Cambia el color de la barra cuando se selecciona */
+    background: #dad4bb; /* Cambia el color de la barra cuando se selecciona */
   }
   
   /* Estilo de la barra al mover el control (el área "llena") */
   input[type="range"]::-webkit-slider-runnable-track {
-    height: 2px;
-    background: #232523; /* Color de la parte llena de la barra */
-    border-radius: 5px;
+    height: 10px;
+    background: #373737; /* Color de la parte llena de la barra */
+    border-radius: 20px;
   }
   
   /* Estilo para el área "llena" en Firefox */
   input[type="range"]::-moz-range-track {
-    height: 8px;
-    background: #4caf50;
-    border-radius: 3px;
+    height: 10px;
+    background: #373737; /* Color de la parte llena de la barra */
+    border-radius: 20px;
+  }
+
+  .volumeComponent{
+    background-color:#dad4bb;
+    width: 150px;
+    height: 35px;
+
+    margin-left: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    border-radius: 20px;
+
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2); /* Sombra */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .volumeComponent label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+
+  .volumeOnIcon{
+    height: 25px;
+    width: 35px;
+  }
+
+  .volumeOffIcon{
+    height: 25px;
+    width: 35px;
   }
   

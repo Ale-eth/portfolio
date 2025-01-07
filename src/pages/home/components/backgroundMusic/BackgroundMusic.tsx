@@ -39,12 +39,14 @@ const BackgroundMusic = () => {
   return (
     <div>
       <audio ref={audioRef} src="src/assets/background-music.mp3" loop />
-      <button onClick={togglePlay}>
-        {isPlaying ? "Pause" : "Play"}
-      </button>
 
+      <div className="volumeComponent">
       <label>
-        Volumen:
+        {volume > 0 ? (
+          <img onClick={togglePlay} src="src/assets/icons/volumeOn-svg.svg" alt="Volume Icon" className="volumeOnIcon" />
+        ) : (
+          <img onClick={togglePlay} src="src/assets/icons/volumeOff-svg.svg" alt="Muted Icon" className="volumeOffIcon" />
+        )}
         <input
           className="volumeInput"
           type="range"
@@ -55,6 +57,8 @@ const BackgroundMusic = () => {
           onChange={handleVolumeChange}
         />
       </label>
+      </div>
+      
     </div>
   );
 };
