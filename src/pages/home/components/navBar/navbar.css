@@ -14,7 +14,10 @@
     margin-top: 45px;
 }
 
-.navBar ul li{
+
+.li-items{
+    color: #232523;
+
     margin-left: 20px;
     margin-right: 20px;
     color: #232523;
@@ -26,9 +29,4 @@
 
     list-style-type: none;
     padding-left: 0; 
-}
-
-
-.navBar ul li a{
-    color: #232523;
 }

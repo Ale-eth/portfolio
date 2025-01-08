@@ -1,12 +1,22 @@
 import MainContainer from "./pages/home/components/mainContainer/MainContainer";
+import MainAboutPage from "./pages/about/components/MainAboutPage";
 
 
 import './App.css'
+import { Route } from "react-router-dom";
+import { Routes } from "react-router-dom";
+
 
 function App() {
 
   return (
-      <MainContainer />
+      <>
+      <Routes>
+        <Route path="/" element={ <MainContainer /> } />
+        <Route path="about" element={ <MainAboutPage /> } />
+      </Routes>
+      </>
+
   )
 }
 
