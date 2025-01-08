@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+
+.footer{
+    background-color: #d4cdb4;
+
+    width: 99.5vw;
+    height: 75px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer h3{
+    margin: 0;
+
+    color: #232523;
+    font-family: "Mochiy Pop One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}

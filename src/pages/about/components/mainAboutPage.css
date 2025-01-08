@@ -7,6 +7,7 @@ body {
     place-items: center;
     min-width: 320px;
     min-height: 100vh;
+    
   }
 
 .mainAbout{
@@ -14,11 +15,15 @@ body {
     height: 100%;
     background-color: #F2EDDA;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .mainAboutContainer{
-    width: 99.5vw;
-    height: 94vh;
+    width: 75%;
+    height: 60%;
 
     
     display: flex;
@@ -26,6 +31,12 @@ body {
     align-items: center;
 
     margin-top:30px;
+
+
+    border-radius: 25px;
+
+    background-image: url("../../../assets/images/papel-svg.svg");
+    background-size: cover;
 }
 
 .mainAboutContainer h1{
@@ -48,6 +59,7 @@ body {
     font-size:30px;
 
     margin-bottom:0;
+
 }
 
 .mainAboutContainer h3{
@@ -65,21 +77,104 @@ body {
 .d1{
     display: flex;
     flex-direction: row;
+    align-items: center;
+
+    border-style: dashed;
+    border-color: red;
 }
 
 .d2{
- width: 50%;
+ width: 45%;
  height: 100%;
+
+ display: flex;
+ justify-content: right;
+ align-items: center;
+
+ border-style: dashed;
+ border-color: red;
 }
 
 .d3{
-width: 50%;
+width: 45%;
 height: 100%;
+
+border-style: dashed;
+border-color: red;
 }
 
 .textCont{
-    width: 50%;
+    width: 80%;
 }
 
-.sobreMi{
+
+.d4{
+    display: flex;
+    flex-direction: row;
+
+    margin-top:50px;
+    margin-bottom:15px;
+
+    border-style: dashed;
+    border-color: red;
 }
+
+.d5{
+ width: 800px;
+ height: 100%;
+
+ border-style: dashed;
+ border-color: red;
+}
+
+.d5 h3 {
+    margin-left: 5px;
+}
+
+.d5 h3 p{
+    margin-top:0px;
+    margin-bottom:0px;
+    
+}
+
+.d6{
+width: 50%;
+height: 100%;
+
+border-style: dashed;
+border-color: red;
+}
+
+.d6 img{
+    margin-top:40px;
+}
+
+.spanT{
+    color:#232523	;
+
+    font-family: "Mochiy Pop One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.d7{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+    border-style: dashed;
+    border-color: red;
+
+    margin-top:15px;
+    margin-bottom:15px;
+}
+
+.d7-content{
+    width: 1400px;
+
+    border-style: dashed;
+    border-color: red;
+}
+
