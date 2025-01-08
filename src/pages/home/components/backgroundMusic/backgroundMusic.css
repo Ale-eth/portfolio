@@ -53,7 +53,7 @@ input[type="range"]:focus {
 .volumeContainer{
   display: flex;
   flex-direction:column;
-  justify-content: center;
+  justify-content: left;
   width: 100%;
   margin-left:75px;
 }
@@ -86,7 +86,7 @@ input[type="range"]:focus {
     font-weight: 400;
     font-size: 11px;
     padding-left: 25px;
-    margin-top:5px;
+    margin-top:54px;
 }
 
 /* Icon for the volume on state */
