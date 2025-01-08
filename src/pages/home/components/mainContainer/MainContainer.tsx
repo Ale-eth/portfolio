@@ -3,6 +3,8 @@ import Navbar from '../navBar/Navbar';
 import HeroText from './heroText/HeroText';
 import BackgroundMusic from '../backgroundMusic/BackgroundMusic';
 
+import Test from '../mainContainer/Test';
+
 function MainContainer() {
     return (
         <>
@@ -12,7 +14,7 @@ function MainContainer() {
             <HeroText />
             <BackgroundMusic />
         </div>
-        
+        <Test></Test>
         </>
     )
   }
