@@ -2,6 +2,10 @@ import { useEffect } from "react";
 import React, { useRef, useState } from "react";
 
 import './backgroundMusic.css'
+import Test from "../mainContainer/Test";
+
+import Box from '@mui/material/Box';
+import Slider from '@mui/material/Slider';  
 
 
 const BackgroundMusic = () => {
@@ -36,6 +40,20 @@ const BackgroundMusic = () => {
     }
   }, []); // Solo se ejecuta una vez al cargar el componente
 
+
+
+  function guardar(){
+    <input
+    className="volumeInput"
+    type="range"
+    min="0" // Volumen mínimo
+    max="0.07" // Volumen máximo
+    step="0.01" // Incrementos de ajuste
+    value={volume}
+    onChange={handleVolumeChange}
+    />
+    }
+
   return (
     <div className="volumeContainer">
       <audio ref={audioRef} src="src/assets/background-music.mp3" loop />
@@ -46,15 +64,8 @@ const BackgroundMusic = () => {
         ) : (
           <img onClick={togglePlay} src="src/assets/icons/volumeOff-svg.svg" alt="Muted Icon" className="volumeOffIcon" />
         )}
-        <input
-          className="volumeInput"
-          type="range"
-          min="0" // Volumen mínimo
-          max="0.07" // Volumen máximo
-          step="0.01" // Incrementos de ajuste
-          value={volume}
-          onChange={handleVolumeChange}
-        />
+
+        <Test />
       </label>
       </div>
       <p className="volumenP">¡ESCÚCHA LO-FI!</p>
@@ -64,3 +75,7 @@ const BackgroundMusic = () => {
 };
 
 export default BackgroundMusic;
+
+
+
+
