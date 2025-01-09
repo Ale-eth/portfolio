@@ -4,8 +4,6 @@ import HeroText from './heroText/HeroText';
 import BackgroundMusic from '../backgroundMusic/BackgroundMusic';
 import Footer from '../footer/Footer';
 
-import Test from '../mainContainer/Test';
-
 function MainContainer() {
     return (
         <>

@@ -176,9 +176,10 @@ border-color: red;
 
 .d7{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     align-items: center;
+    justify-content: right;
 
     margin-top:15px;
     margin-bottom:15px;
@@ -187,10 +188,22 @@ border-color: red;
     border-color: green;
 }
 
-.d7-content{
-    width: 85%;
+.d8{
+    width: 60%;
+    margin-left: 2%;
 
     border-style: dashed;
-border-color: blue;
+    border-color: blue;
 }
 
+.d9{
+    border-style: dashed;
+    border-color: red;
+}
+
+
+
+.tech-icon{
+    width: 45px;
+    height: 45px;
+}
