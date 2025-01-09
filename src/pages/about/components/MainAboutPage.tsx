@@ -46,7 +46,7 @@ function MainAboutPage() {
                     </h3>
                     </div>
                     <div className="d6">
-                        <img src={"src/assets/images/hand-svg.svg"}/>
+                        <img src={"src/assets/images/olas-svg.svg"}/>
                     </div>
                 </div>
 
