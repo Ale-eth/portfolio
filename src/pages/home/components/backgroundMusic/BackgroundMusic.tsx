@@ -55,9 +55,8 @@ const BackgroundMusic = () => {
     }
 
   return (
-    <div>
+    <div className="volumeContainer">
       <audio ref={audioRef} src="src/assets/background-music.mp3" loop />
-
       <div className="volumeComponent">
       <label>
         {volume > 0 ? (
@@ -69,6 +68,7 @@ const BackgroundMusic = () => {
         <Test />
       </label>
       </div>
+      <p className="volumenP">¡ESCÚCHA LO-FI!</p>
       
     </div>
   );

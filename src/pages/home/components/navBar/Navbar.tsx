@@ -7,10 +7,10 @@ function Navbar() {
         <>
         <div className="navBar">
             <ul>
-                <li><a href="https://www.ejemplo.com" target="_blank" rel="noopener noreferrer"> INICIO </a></li>
-                <li><a href="https://www.ejemplo.com" target="_blank" rel="noopener noreferrer"> SOBRE MI </a></li>
-                <li><a href="https://www.ejemplo.com" target="_blank" rel="noopener noreferrer"> PROYECTOS </a></li>
-                <li><a href="https://www.ejemplo.com" target="_blank" rel="noopener noreferrer"> CONTACTO </a></li>
+                <Link to="/" className='li-items'>INICIO</Link>
+                <Link to="about" className='li-items'>SOBRE MI</Link>
+                <Link to="/" className='li-items'>PROYECTOS</Link>
+                <Link to="/" className='li-items'>CONTACTO</Link>
             </ul>
         </div>
         </>

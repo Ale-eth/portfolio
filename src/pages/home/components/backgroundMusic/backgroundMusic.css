@@ -1,91 +1,102 @@
-/* Estilo general para el input range */
+/* General styling for the range input */
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
 input[type="range"] {
-    -webkit-appearance: none; /* Elimina los estilos predeterminados de los navegadores */
+    -webkit-appearance: none; /* Removes default styles in browsers */
     appearance: none;
-    width: 100px; /* Ancho completo */
-    height: 30px; /* Altura de la barra */
-    background: #dad4bb; /* Color de fondo de la barra */
-    border-radius: 20px; /* Bordes redondeados */
-    outline: none; /* Elimina el borde al hacer foco */
-    
-  }
-  
-  /* Estilo para el pulgar del range (el círculo que se mueve) */
-  input[type="range"]::-webkit-slider-thumb {
+    width: 100%; /* Full width */
+    height: 10px; /* Height of the track */
+    background: #dad4bb; /* Background color of the track */
+    border-radius: 20px; /* Rounded borders */
+    outline: none; /* Removes focus outline */
+}
+
+/* Style for the thumb (the circle that moves) */
+input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 15px; /* Tamaño del pulgar */
+    width: 15px; /* Thumb size */
     height: 15px;
-    background: #EFEFEF; /* Color del pulgar */
-    border-radius: 50%; /* Hacer que sea redondo */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el pulgar */
-    transition: background-color 0.3s; /* Animación suave al cambiar de color */
-  }
+    background: #EFEFEF; /* Thumb color */
+    border-radius: 50%; /* Make it round */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
 
-  input[type="range"]::-webkit-slider-runnable-track {
-    background-color: red;
-  }
-  
-  input[type="range"]::-moz-range-thumb {
-    width: 15px; /* Tamaño del pulgar */
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 10px;
+    background: #373737; /* Color of the filled part of the track */
+    border-radius: 20px;
+}
+
+/* Style for Firefox */
+input[type="range"]::-moz-range-thumb {
+    width: 15px; /* Thumb size */
     height: 15px;
-    background: #EFEFEF; /* Color del pulgar */
-    border-radius: 50%; /* Hacer que sea redondo */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el pulgar */
-    transition: background-color 0.3s; /* Animación suave al cambiar de color */
-  }
-  
-  /* Estilo de la barra cuando se está moviendo */
-  input[type="range"]:focus {
-    background: #dad4bb; /* Cambia el color de la barra cuando se selecciona */
-  }
-  
-  /* Estilo de la barra al mover el control (el área "llena") */
-  input[type="range"]::-webkit-slider-runnable-track {
-    height: 10px;
-    background: #373737; /* Color de la parte llena de la barra */
-    border-radius: 20px;
-  }
-  
-  /* Estilo para el área "llena" en Firefox */
-  input[type="range"]::-moz-range-track {
-    height: 10px;
-    background: #373737; /* Color de la parte llena de la barra */
-    border-radius: 20px;
-  }
+    background: #EFEFEF; /* Thumb color */
+    border-radius: 50%; /* Round thumb */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
 
-  .volumeComponent{
-    background-color:#dad4bb;
+input[type="range"]::-moz-range-track {
+    height: 10px;
+    background: #373737; /* Color of the filled part of the track */
+    border-radius: 20px;
+}
+
+/* Style for the range input when it’s focused */
+input[type="range"]:focus {
+    background: #dad4bb; /* Change the track color when selected */
+}
+
+.volumeContainer{
+  display: flex;
+  flex-direction:column;
+  justify-content: left;
+  width: 100%;
+  margin-left:75px;
+}
+
+/* Volume component container */
+.volumeComponent {
+    background-color: #dad4bb;
     width: 150px;
     height: 35px;
-
-    margin-left: 20px;
     padding-left: 5px;
     padding-right: 5px;
-
     border-radius: 20px;
-
-    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2); /* Sombra */
-
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2); /* Shadow effect */
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .volumeComponent label{
+/* Label inside the volume component */
+.volumeComponent label {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
+}
 
+/* Text inside the volume component */
+.volumenP {
+    color: #232523;
+    font-family: "Mochiy Pop One", serif;
+    font-weight: 400;
+    font-size: 11px;
+    padding-left: 25px;
+    margin-top:54px;
+}
 
-  .volumeOnIcon{
+/* Icon for the volume on state */
+.volumeOnIcon {
     height: 25px;
     width: 35px;
-  }
+}
 
-  .volumeOffIcon{
+/* Icon for the volume off state */
+.volumeOffIcon {
     height: 25px;
     width: 35px;
-  }
-  
+}
